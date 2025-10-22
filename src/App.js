@@ -13,10 +13,10 @@ function App() {
       <div style={{display: "flex", justifyContent: "center"}}>
         <div style={{display: "flex",width: "60%"}}>
           <div style={{width: "70%"}}>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post title="20 Tarmeez Academy" description="أكاديمية مخصصة لتعليم البرمجة بمختلف لغاتها و تقنياتها" />
+            <Post title="Hello World" description="This is the hello world article" />
+            <Post title="Post 3" description="This is the body of post 3" />
+            <Post title="Post 4" description="This is the body of post 4" />
             <Post />
           </div>
           <div style={{width: "30%"}}>

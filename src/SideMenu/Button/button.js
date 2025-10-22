@@ -1,7 +1,10 @@
 import "./button.css";
 
-export default function Btn(){
+export default function Btn({title,children}){
     return(
-        <button className="btn">Tag Button</button>
+        <button className="btn">
+            {title}
+            {children}
+        </button>
     );
 }
