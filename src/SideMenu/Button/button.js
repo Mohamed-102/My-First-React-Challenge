@@ -2,9 +2,16 @@ import "./button.css";
 
 export default function Btn({title,children}){
     return(
-        <button className="btn">
-            {title}
-            {children}
-        </button>
+        <div>
+            {title == null | title == "" ? (
+                <div></div>
+            ) : (
+                <button className="btn">
+                    {title}
+                    {children}
+                </button>
+            )}
+            
+        </div>
     );
 }

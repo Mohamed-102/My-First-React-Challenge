@@ -3,6 +3,7 @@ import Post from './Menu/post';
 import SideMenu from './SideMenu/SideMenu';
 
 
+const showCategories = true;
 function App() {
   return (
     <div className="App">
@@ -20,12 +21,21 @@ function App() {
             <Post />
           </div>
           <div style={{width: "30%"}}>
-            <SideMenu />
+            <AppSideMenu />
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+function AppSideMenu(){
+  if (showCategories == true) {
+    return(<SideMenu />);
+  } else {
+    return null;
+  }
+  
 }
 
 export default App;
